@@ -1,73 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(http://www.futbolbogotano.com/wp-content/uploads/2017/10/logo-2014-copia-ESC.-DEP.-LATIN-SPORT-FC.jpg);
-}
-
-.b{
-    #pestanas {
-        float:left;
-        width:100%;
-        line-height:normal;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    #pestanas ul {
-        margin:0;
-        padding:0;
-        list-style:none;
-    }
-    #pestanas li {
-        float:left;
-        margin:0 0 0 3px;
-        padding:0;
-        background:url("p-der.gif") no-repeat right top;
-    }
-    #pestanas a {
-        display:block;
-        background:url("p-izq.gif") no-repeat left top;
-        padding:3px 10px 3px 10px;
-        color: #fff;
-        text-decoration: none;
-    }
-    #pestanas .activa a{
-        background-image:url("p-izq-activo.gif");
-    }
-    #pestanas .activa{
-        background-image:url("p-der-activo.gif");
-    }
+    background-image: url(../img/proyecto.jpg);
 }
 
 .login {
     margin: 20px auto;
-    width: 300px;
+    width: 365px;
     padding: 30px 25px;
     background: white;
     border: 1px solid #c4c4c4;
 }
 
-h1.login-title {
-    margin: -28px -25px 25px;
+aside.projectman-title {
+    margin: 45px -25px 25px;
     padding: 15px 25px;
     line-height: 30px;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 300;
-    color: #ADADAD;
+    color: #000000;
     text-align:center;
     background: #f7f7f7;
+    text-align:center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
+.atenea-helmet{
+    float: left;
+    width: 20%;
 }
 
 .login-input {
-    width: 285px;
+    width: 340px;
     height: 50px;
     margin-bottom: 25px;
     padding-left:10px;
-    font-size: 15px;
+    font-size: 30px;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 4px;
+    align-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 .login-input:focus {
     border-color:#6e8095;
@@ -80,7 +57,7 @@ h1.login-title {
     font-size: 20px;
     color: #fff;
     text-align: center;
-    background: #f0776c;
+    background: #00D495;
     border: 0;
     border-radius: 5px;
     cursor: pointer; 

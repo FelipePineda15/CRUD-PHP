@@ -31,8 +31,8 @@
         ?>
         <tr>
             <td><?php echo $Dato['IDUsuario'] ?></td>
-            <td><?php echo $Dato['Nombre'] ?></td>
-            <td><?php echo $Dato['Correo'] ?></td>
+            <td><?php echo $Dato['nombre'] ?></td>
+            <td><?php echo $Dato['correo'] ?></td>
             <td><a href="EditarP.php?ID=<?php echo $Dato['IDUsuario'];?>">Editar</a></td>
             <td><a href="Controlador/EliminarP.php?ID=<?php echo $Dato['IDUsuario'];?>">Eliminar</a></td>
         </tr>
