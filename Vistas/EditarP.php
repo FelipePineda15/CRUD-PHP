@@ -25,7 +25,7 @@
     </head>
     <body>
         <h3>Editar Usuario</h3> 
-        <form action="Controlador/EditarP.php" method="post">
+        <form action="../Controlador/EditarP.php" method="post">
             <input name="ID" type="hidden" value="<?php echo $ID ; ?>">
             <label>Nombre: </label><input type="text" name="Nombre" value="<?php echo $Nombre; ?>"><br><br>
             <label>Correo: </label><input type="text" name="Email" value="<?php echo $Correo; ?>"><br><br>

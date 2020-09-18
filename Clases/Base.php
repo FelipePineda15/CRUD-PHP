@@ -14,17 +14,17 @@ class Base {
     }
 
     public function Login($Usuario, $Password, $Conexion) {
-        $sql = "Select Usuario, Password FROM Administrador WHERE Usuario = '$Usuario' and Password = $Password";
+        $sql = "SELECT usuario, password FROM administrador WHERE usuario = '$usuario' and password = $password";
         $Datos = mysqli_query($Conexion, $sql);
         return $Datos;
     }
     
-    public function VerificarCargo($Usuario, $Password, $Conexion){
-        $sql = "SELECT Cargo.IDCargo FROM Cargo INNER JOIN CargoUsuario ON Cargo.IDCargo = CargoUsuario.IDCargo"
-             . " INNER JOIN Administrador ON Administrador.IDUsuario = CargoUsuario.IDUsuario "
-             . " WHERE Administrador.Usuario = '$Usuario' and Administrador.Password = $Password";
-        $Datos = mysqli_query($Conexion, $sql);
-        $Rol = mysqli_fetch_array($Datos);
-        return $Rol['IDCargo'];
+    public function VerificarCargo($usuario, $password, $conexion){
+        $sql = "SELECT cargo.IDcargo FROM cargo INNER JOIN cargoUsuario ON cargo.IDcargo = cargoUsuario.IDcargo"
+             . " INNER JOIN administrador ON administrador.IDusuario = cargoUsuario.IDusuario "
+             . " WHERE administrador.usuario = '$usuario' and administrador.password = $password";
+        $datos = mysqli_query($conexion, $sql);
+        $rol = mysqli_fetch_array($datos);
+        return $rol['IDcargo'];
     }
 }

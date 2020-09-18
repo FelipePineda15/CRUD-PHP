@@ -44,7 +44,7 @@
 </head>
     <body>
         <p class="a">Editar Usuario</p> 
-        <form action="Controlador/EditarP.php" method="post" align="center">
+        <form action="../Controlador/EditarP.php" method="post" align="center">
             <input name="ID" type="hidden" value="<?php echo $ID ; ?>">
             <label>Nombre: </label><input type="text" name="Nombre" value="<?php echo $Nombre; ?>"><br><br>
             <label>Apellido: </label><input type="text" name="Apellido" value="<?php echo $Apellido; ?>"><br><br>
