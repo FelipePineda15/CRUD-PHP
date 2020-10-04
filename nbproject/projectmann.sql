@@ -68,8 +68,9 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 
 INSERT INTO `usuario` (`idUsuario`, `nombre`, `apellido`, `correo`, `contrasena`, `cargoId`) VALUES
 (1, 'Felipe', 'Pineda', 'fpineda@projectamann.com', 'admin1234', 1),
-(2, 'Cristian', 'Nuñez', 'cnuñez@projectamann.com', 'dev1234', 2),
-(3, 'Gabriel', 'Mendoza', 'gmendoza@projectmann.com', 'sale1234', 3);
+(2, 'Cristian', 'Nuñez', 'cnuñez@projectamann.com', 'dev1234', 1),
+(3, 'Gabriel', 'Mendoza', 'gmendoza@projectmann.com', 'sale1234', 1),
+(4, 'Pedro', 'perez', 'pperez@projectmann.com', 'sales1234', 3);
 
 --
 -- Restricciones para tablas volcadas
