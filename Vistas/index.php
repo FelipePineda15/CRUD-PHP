@@ -16,11 +16,21 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/Formato.css">
     </head>
     <body>
-        <form action="Login.php" method="post" class="login">
-            <p><img class="atenea-helmet" src="img/AteneaHelmet.png"><aside class="projectman-title"> ProjectMann </aside></p>
-            <p><input type="text" class="login-input" placeholder="Usuario" autofocus="" name="usuario" title="Usuario"></p>
-            <p><input type="password" name="password" class="login-input" placeholder="Password" title="Password"></p>
-            <p><input type="submit" value="Ingresar" title="Ingresar" class="login-button"></p>
-        </form>
+        <p><img class="atenea-helmet" src="img/AteneaHelmet.png"><aside class="projectman-title"> ProjectMann CRUD </aside></p>
+        <form class="login">
+            <p>
+                <button class="projectmann-button" formaction="create.php" >Create</button>
+            </p>
+            <p>
+                <button class="projectmann-button" formaction="read.php" >Read</button>
+            </p>
+            <p>
+                <button class="projectmann-button" formaction="update.php" >Update</button>
+            </p>
+            <p>
+                <button class="projectmann-button" formaction="delete.php" >Delete</button>
+            </p>
+    </form>
+
     </body>
 </html>
